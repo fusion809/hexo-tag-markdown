@@ -2,7 +2,6 @@ var fs   = require('fs'),
   path = require('path'),
   MarkdownIt = require('markdown-it'),
   md = new MarkdownIt();
-  marked = md.render();
 /**
  * Include markdown tag
  *
@@ -24,6 +23,6 @@ var mdTagFun= function(args, content){
 	var data = {};
 	data.content = fs.readFileSync(local, 'utf8');
 
-	return marked(data.content)
+	return md.render(data.content)
 };
 hexo.extend.tag.register('include_markdown', mdTagFun);
