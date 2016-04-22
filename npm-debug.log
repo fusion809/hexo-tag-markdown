@@ -1,0 +1,101 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'publish' ]
+2 info using npm@3.8.6
+3 info using node@v5.10.1
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/fusion809/GitHub/mine/hexo-tag-markdown',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/fusion809/.npm/hexo-tag-markdown/1.0.5/package.tgz not in flight; packing
+9 verbose correctMkdir /home/fusion809/.npm correctMkdir not in flight; initializing
+10 info lifecycle hexo-tag-markdown@1.0.5~prepublish: hexo-tag-markdown@1.0.5
+11 silly lifecycle hexo-tag-markdown@1.0.5~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/home/fusion809/.npm/hexo-tag-markdown/1.0.5/package.tgz',
+12 verbose tar pack   '/home/fusion809/GitHub/mine/hexo-tag-markdown' ]
+13 verbose tarball /home/fusion809/.npm/hexo-tag-markdown/1.0.5/package.tgz
+14 verbose folder /home/fusion809/GitHub/mine/hexo-tag-markdown
+15 verbose addLocalTarball adding from inside cache /home/fusion809/.npm/hexo-tag-markdown/1.0.5/package.tgz
+16 verbose correctMkdir /home/fusion809/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd hexo-tag-markdown@1.0.5
+18 verbose afterAdd /home/fusion809/.npm/hexo-tag-markdown/1.0.5/package/package.json not in flight; writing
+19 verbose correctMkdir /home/fusion809/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /home/fusion809/.npm/hexo-tag-markdown/1.0.5/package/package.json written
+21 silly publish { name: 'hexo-tag-markdown',
+21 silly publish   version: '1.0.5',
+21 silly publish   description: 'Convert {% include_markdown /path/to/md %}, similarly to how {% include_relative %} is converted by Liquid',
+21 silly publish   main: 'index.js',
+21 silly publish   keywords: [ 'hexo', 'markdown' ],
+21 silly publish   author: { name: 'Brenton Horne' },
+21 silly publish   license: 'GPL-3.0',
+21 silly publish   dependencies: { 'hexo-renderer-markdown-it': '^3.4.1' },
+21 silly publish   readme: '# hexo-tag-markdown\nThis repository contains an attempt to allow the insertion of Liquid-like tags (of the form `{% include_markdown %}`) into Hexo blogs, in order to include content from other markdown files in markdown posts. [Tao Zhou](https://github.com/taoalpha/) is the brains behind this package, all I, [Brenton Horne](https://github.com/fusion809/), did was provided the initial idea for it, he did all the coding, so deserves all the credit. \n\nSee [here](https://github.com/fusion809/hexo-site/blob/master/source/_posts/free-operating-systems.md#footnotes) (raw: https://raw.githubusercontent.com/fusion809/hexo-site/master/source/_posts/free-operating-systems.md) for an example of this plugin being used on an Hexo site.\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: 'd3f8c7f6a365c39fb324d0fe6f88949df38d3534',
+21 silly publish   _id: 'hexo-tag-markdown@1.0.5',
+21 silly publish   scripts: {},
+21 silly publish   _shasum: '7545afb5f86c65f710f8a3e70a2f19a8b6e233d3',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name hexo-tag-markdown
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'hexo-tag-markdown',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   name: 'hexo-tag-markdown',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/hexo-tag-markdown
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /home/fusion809/.npm/hexo-tag-markdown/1.0.5/package.tgz
+30 verbose request uri https://registry.npmjs.org/hexo-tag-markdown
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 12:23:42 pm
+33 verbose request using bearer token for auth
+34 verbose request id 11c5c7d4d8611fb0
+35 http request PUT https://registry.npmjs.org/hexo-tag-markdown
+36 http 403 https://registry.npmjs.org/hexo-tag-markdown
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '95',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Fri, 22 Apr 2016 02:24:00 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-bne7722-BNE',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1461291839.848194,VS0,VE971',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating /home/fusion809/.npm/registry.npmjs.org/hexo-tag-markdown on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: "You cannot publish over the previously published version 1.0.5." : hexo-tag-markdown
+40 verbose stack     at makeError (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+40 verbose stack     at Request._callback (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+40 verbose stack     at Request.self.callback (/usr/lib/node_modules/npm/node_modules/request/request.js:199:22)
+40 verbose stack     at emitTwo (events.js:100:13)
+40 verbose stack     at Request.emit (events.js:185:7)
+40 verbose stack     at Request.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1036:10)
+40 verbose stack     at emitOne (events.js:95:20)
+40 verbose stack     at Request.emit (events.js:182:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:963:12)
+41 verbose statusCode 403
+42 verbose pkgid hexo-tag-markdown
+43 verbose cwd /home/fusion809/GitHub/mine/hexo-tag-markdown
+44 error Linux 4.5.1-1-ARCH
+45 error argv "/usr/bin/node" "/usr/bin/npm" "publish"
+46 error node v5.10.1
+47 error npm  v3.8.6
+48 error code E403
+49 error "You cannot publish over the previously published version 1.0.5." : hexo-tag-markdown
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
