@@ -1,7 +1,6 @@
 var fs       = require('fs'),
   path       = require('path'),
-  MarkdownIt = require('markdown-it')()
-                  .use(require('markdown-it-footnote'));
+  MarkdownIt = require('markdown-it');
   md         = new MarkdownIt();
 /**
  * Include markdown tag
