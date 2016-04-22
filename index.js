@@ -1,11 +1,6 @@
 var fs   = require('fs'),
   path = require('path'),
-<<<<<<< HEAD
   marked = require('markdown-it');
-=======
-  marked = require('marked');
->>>>>>> 992400a1b001b940572fedf9a5a6ae663c8d6eb7
-
 /**
  * Include markdown tag
  *
