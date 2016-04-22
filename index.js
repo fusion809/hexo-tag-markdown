@@ -1,6 +1,8 @@
 var fs   = require('fs'),
   path = require('path'),
-  marked = require('markdown-it');
+  MarkdownIt = require('markdown-it'),
+  md = new MarkdownIt();
+  marked = md.render();
 /**
  * Include markdown tag
  *

@@ -1,6 +1,6 @@
 {
   "name": "hexo-tag-markdown",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Convert {% include_markdown /path/to/md %}, similarly to how {% include_relative %} is converted by Liquid",
   "main": "index.js",
   "keywords": [
