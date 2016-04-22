@@ -1,10 +1,10 @@
 {
   "name": "hexo-tag-markdown",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Convert {% include_markdown /path/to/md %}, similarly to how {% include_relative %} is converted by Liquid",
   "main": "index.js",
   "keywords": [
-    "hexo"
+    "hexo", "markdown"
   ],
   "author": "Brenton Horne",
   "license": "GPL-3.0",
