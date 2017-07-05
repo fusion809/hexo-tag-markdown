@@ -6,7 +6,7 @@
   "keywords": [
     "hexo", "markdown"
   ],
-  "author": "Brenton Horne",
+  "author": "fusion809",
   "license": "GPL-3.0",
   "dependencies": {
     "hexo-renderer-markdown-it": "^3.4.1"
